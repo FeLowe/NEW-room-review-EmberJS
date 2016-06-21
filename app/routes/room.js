@@ -1,20 +1,23 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model() {
-    return Ember.RSVP.hash({
-      rooms: this.store.findAll('room'),
-      reviews: this.store.findAll('review')
-    });
+  model(params) {
+    return this.store.findRecord('room', params.room_id);
   },
+  // model() {
+  //   return Ember.RSVP.hash({
+  //     rooms: this.store.findAll('room'),
+  //     reviews: this.store.findAll('review')
+  //   });
+  // },
    actions: {
      saveReviewInsideRoomRoute(reviewInput) {
        var newReview = this.store.createRecord('review', reviewInput);
-       var room = reviewInput.room;
+       var room  = reviewInput.room;
        room.get('reviews').addObject(newReview);
        newReview.save().then(function() {
          return room.save();
-         debugger;
+        //  debugger;
        });
        this.transitionTo('room', reviewInput.room);
      },

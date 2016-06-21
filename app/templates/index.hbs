@@ -1,20 +1,22 @@
 
 <div id="room-page">
+  <div class="container">
+    <h1>Room Reviewer</h1>
+    <h3>Want to tell the <i>World</i> your experience while renting a room? If so, you are at the right place!</h3>
+    <hr>
+    <h2>Let's get started</h2>
 
-<h1>Room Reviewer</h1>
-<h3>Want to tell the <i>World</i> your experience while renting a room? If so, you are at the right place!</h3>
+    <p>Start by adding the room, and on the sequence, adding your review to it.</p>
+
+    {{room-new room=model saveRoomInputCp="saveRoomInIndexRoute"}}
+  </div>
+</div>
 <hr>
-<h2>Let's get started</h2>
-
-<p>Start by adding the room, and on the sequence, adding your review to it.</p>
-
-{{room-new room=model saveRoomInputCp="saveRoomInIndexRoute"}}
-
-<hr>
-<h1>Latest rooms added</h1>
+<div class="container">
+  <h1>Latest rooms added</h1>
   {{#each model.rooms as |room|}}
-{{#link-to 'room' room.id}}{{room.address}}{{/link-to}}
-  {{room-update room=room updateRoomCp="updateRoomInIndexRoute"}}
+  {{#link-to 'room' room.id}}{{room.address}}{{/link-to}}
+  <!-- {{room-update room=room updateRoomCp="updateRoomInIndexRoute"}} -->
   {{/each}}
-  
+
 </div>

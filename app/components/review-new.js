@@ -13,7 +13,7 @@ export default Ember.Component.extend({
         description: this.get('description'),
         room: this.get('room')
       };
-      debugger;
+
       this.set('addNewReview', false);
       this.sendAction('saveReviewInsideRoomCp', reviewInput);
     }
