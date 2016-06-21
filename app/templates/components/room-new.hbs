@@ -1,0 +1,33 @@
+<div id="front-page">
+  <div class="intro">
+    {{#if addNewRoom}}
+    <div>
+      <form id="new-room-form">
+        <div class="form-group">
+          <label for="type">room type</label>
+          {{input value=type id="type" placeholder="basement, loft, single room"}}
+        </div>
+
+        <div>
+          <label for="city">city</label>
+          {{input value=city id="city" placeholder="city"}}
+        </div>
+
+        <div class="form-group">
+          <label for="address">address</label>
+          {{input value=address id="address" type="address" placeholder="address"}}
+        </div>
+
+        <div class="form-group">
+          <label for="image">image</label>
+          {{input value=image id="image" type="url" placeholder="picture"}}
+        </div>
+
+        <button {{action 'saveRoom'}}>save</button>
+      </form>
+    </div>
+    {{else}}
+    <button class="btn btn-success"{{action 'showRoomForm'}}>add a room</button>
+    {{/if}}
+  </div>
+</div>

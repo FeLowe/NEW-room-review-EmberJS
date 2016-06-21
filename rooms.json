@@ -1,0 +1,44 @@
+{ "rooms": [{
+    "type": "basement",
+    "city":"Portland",
+    "address": "921 SW Clay St",
+    "image": "https://i.ytimg.com/vi/CEaHz_K0reI/hqdefault.jpg"
+  }, {
+    "type": "loft",
+    "city":"Portland",
+    "address": "n halleck st at n burrage ave",
+    "image": "http://img.weburbanist.com/wp-content/uploads/2015/04/tiny-apartments-custom-plywood-3-468x312.jpg"
+  }, {
+    "type": "single",
+    "city":"Portland",
+    "address": "Hawthorne & Division (S.e. Portland)",
+    "image": "http://www.apartments2book.com/images/ny13b.jpg"
+  }, {
+    "type": "basement",
+    "city":"Portland",
+    "address": "Belmont & 25th",
+    "image": "https://i.ytimg.com/vi/0f3mUkfyNWY/hqdefault.jpg"
+  }, {
+    "type": "single",
+    "city":"Portland",
+    "address": "SE 162nd ave at se Taylor",
+    "image": "http://s3-us-west-1.amazonaws.com/reachoomedia/asset_images/original/330/313/207/00A0A_iZAs3Xh0S2r_600x450.jpg?2016"
+    }],
+  "reviews": [{
+    "user": "Fernanda",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    "date": "06/17/2016"
+  }, {
+    "user": "Fernanda",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    "date": "06/17/2016"
+  }, {
+    "user": "Fernanda",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    "date": "06/17/2016"
+  }, {
+    "user": "Fernanda",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    "date": "06/17/2016"
+  }]
+}

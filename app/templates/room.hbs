@@ -1,0 +1,18 @@
+<div id="review-page">
+<h2>Thank you for adding a room and writing a review!</h2>
+<p>It will sure help many user have a better idea of the room they may be interested in much easier.</p>
+
+<p>If the room you would like to write a review for review has to yet been reviewed, you can start by clicking on the "add room" button, as weel as "saving" it when you fill out the form.</p>
+
+<h4>Write your review for address: {{room.address}}</h4>
+
+{{review-new room=model saveReviewInsideRoomCp="saveReviewInsideRoomRoute"}}
+
+<ul>
+  {{#each model.reviews as |review|}}
+  {{review-detail review=review destroyReviewCp="destroyReviewInIndexRoute"}}
+
+  {{/each}}
+</ul>
+
+</div>
