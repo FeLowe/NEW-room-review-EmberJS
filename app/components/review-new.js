@@ -6,10 +6,11 @@ export default Ember.Component.extend({
     showReviewForm() {
       this.set('addNewReview', true);
     },
-    // selectRating(selection){
-    //   if (selection) {
-    //     this.set('rating', selection);
-    // },
+    selectRating(selection){
+      if (selection) {
+        this.set('rating', selection);
+      }
+    },
     saveReview() {
       var reviewInput = {
         user: this.get('user'),
@@ -18,7 +19,6 @@ export default Ember.Component.extend({
         room: this.get('room'),
         rating: parseInt(this.get('rating'))
       };
-
       this.set('addNewReview', false);
       this.sendAction('saveReviewInsideRoomCp', reviewInput);
     }

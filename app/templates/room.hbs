@@ -8,12 +8,11 @@
 
 {{review-new room=model saveReviewInsideRoomCp="saveReviewInsideRoomRoute"}}
 
-<ul>
+
   {{#each model.reviews as |review|}}
   {{review-detail review=review destroyReviewCp="destroyReviewInsideRoomRoute"}}
   {{review-update review=review updateReviewCp="updateReviewInsideRoomRoute"}}
-
   {{/each}}
-</ul>
+
 
 </div>
