@@ -9,14 +9,14 @@
     <p>Start by adding the room, and on the sequence, adding your review to it.</p>
 
     {{room-new room=model saveRoomInputCp="saveRoomInIndexRoute"}}
+
   </div>
 </div>
 <hr>
-<div class="container">
+<div id="rooms-list" class="container">
   <h1>Latest rooms added</h1>
   {{#each model.rooms as |room|}}
-  {{#link-to 'room' room.id}}{{room.address}}{{/link-to}}
-  <!-- {{room-update room=room updateRoomCp="updateRoomInIndexRoute"}} -->
-  {{/each}}
-
+  {{room-popularity room}} {{#link-to 'room' room.id}}{{room.address}}{{/link-to}}
+  {{room-update room=room updateRoomCp="updateRoomInIndexRoute"}}
+  {{/each}}  
 </div>

@@ -1,20 +1,24 @@
-#front-page{
+/*#front-page{*/
   /*background-image: url('img/trail2.jpg');*/
-  width: auto;
+  /*width: auto;
   height: 50px;
   display: inline-block;
-}
+}*/
 /*.intro{
   margin-top: 100px;
   margin-left: 10px;
   margin-right: 10px;
 }*/
+
+
 #room-page{
   width: auto;
-  /*height: 1120px;*/
   margin-top: 10%;
   margin-left: 10px;
   margin-right: 10px;
+}
+#rooms-list{
+height: 100px;
 }
 #review-page{
   width: auto;

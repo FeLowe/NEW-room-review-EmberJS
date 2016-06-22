@@ -6,5 +6,6 @@ export default DS.Model.extend({
   user: DS.attr(),
   description: DS.attr(),
   date: DS.attr(),
-  room: DS.belongsTo('room', { async: true })
+  room: DS.belongsTo('room', { async: true }),
+  rating: DS.attr()
 });

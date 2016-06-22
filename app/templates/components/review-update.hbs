@@ -1,0 +1,24 @@
+{{#if updateReviewForm}}
+    <div>
+      <form>
+        <div class="form-group">
+          <label for="userUpdate">review by</label>
+          {{input value=userUpdate placeholder=review.user}}
+        </div>
+
+        <div class="form-group">
+          <label for="dateUpdate">reviewed on</label>
+          {{input value=dateUpdate type='date' placeholder=review.date}}
+        </div>
+
+        <div class="form-group">
+          <label for="descriptionUpdate">review</label>
+          {{textarea value=descriptionUpdate placeholder=review.description}}
+        </div>
+
+        <button class="btn btn-info" {{action 'updateReview' review}}>update</button>
+      </form>
+    </div>
+{{else}}
+  <button class="btn btn-info" {{action 'updateReviewForm'}}>update</button>
+{{/if}}

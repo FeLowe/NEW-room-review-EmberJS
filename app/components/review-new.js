@@ -11,7 +11,8 @@ export default Ember.Component.extend({
         user: this.get('user'),
         date: this.get('date'),
         description: this.get('description'),
-        room: this.get('room')
+        room: this.get('room'),
+        rating: parseInt(this.get('rating'))
       };
 
       this.set('addNewReview', false);

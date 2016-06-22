@@ -17,6 +17,11 @@
           {{textarea value=description id="description"}}
         </div>
 
+        <div class="form-group">
+        <label for="rating">rating(1-5)</label>
+        {{input value=rating id="rating"}}
+      </div>
+
         <button {{action 'saveReview'}}>post</button>
       </form>
     </div>

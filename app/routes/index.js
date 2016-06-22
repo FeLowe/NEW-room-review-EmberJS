@@ -22,10 +22,5 @@ export default Ember.Route.extend({
       roomClickedOn.save();
       this.transitionTo('index');
     },
-    destroyReviewInIndexRoute(currentReview) {
-      currentReview.destroyRecord();
-      this.transitionTo('room');
-    },
-
   }
 });
