@@ -6,6 +6,10 @@ export default Ember.Component.extend({
     showReviewForm() {
       this.set('addNewReview', true);
     },
+    // selectRating(selection){
+    //   if (selection) {
+    //     this.set('rating', selection);
+    // },
     saveReview() {
       var reviewInput = {
         user: this.get('user'),

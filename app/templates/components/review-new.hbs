@@ -16,12 +16,20 @@
           <label for="description">review</label>
           {{textarea value=description id="description"}}
         </div>
-
-        <div class="form-group">
+        <!-- <div class="form-group">
+        {{#x-select action='selectRating'}}
+          {{#x-option value=""}}select rating{{/x-option}}
+          {{#x-option value=rating}}1{{/x-option}}
+          {{#x-option value=rating}}2{{/x-option}}
+          {{#x-option value=rating}}3{{/x-option}}
+          {{#x-option value=rating}}4{{/x-option}}
+          {{#x-option value=rating}}5{{/x-option}}
+        {{/x-select}} -->
+        <!-- <div class="form-group">
         <label for="rating">rating(1-5)</label>
         {{input value=rating id="rating"}}
-      </div>
-
+      </div> -->
+        <!-- </div> -->
         <button {{action 'saveReview'}}>post</button>
       </form>
     </div>

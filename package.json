@@ -39,6 +39,7 @@
     "ember-load-initializers": "^0.5.1",
     "ember-resolver": "^2.0.3",
     "emberfire": "2.0.0",
+    "emberx-select": "2.1.2",
     "firebase": "3.0.5",
     "loader.js": "^4.0.1"
   }
