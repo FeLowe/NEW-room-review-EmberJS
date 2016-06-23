@@ -12,6 +12,7 @@ export default Ember.Component.extend({
         city: this.get('city'),
         address: this.get('address'),
         image: this.get('image')
+        // review : "";
       };
       this.set('addNewQuestion', false);
 

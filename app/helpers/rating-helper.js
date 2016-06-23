@@ -16,11 +16,12 @@ export function ratingHelper(params) {
     // return '&#9733;&#9733;&#9733;'
 
   } else if (ratings === 2){
-    return '***'
+    return '***';
     // return '&#9733;&#9733;'
 
   } else if (ratings === 1){
     return '*';
     // return '&#9733;'
   }
+}
   export default Ember.Helper.helper(ratingHelper);

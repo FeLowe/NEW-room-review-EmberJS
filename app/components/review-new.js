@@ -24,7 +24,7 @@ export default Ember.Component.extend({
         // rating: parseInt(this.get('four')),
         // rating: parseInt(this.get('five'))
       };
-      debugger;
+      // debugger;
       this.set('addNewReview', false);
       this.sendAction('saveReviewInsideRoomCp', reviewInput);
     }
