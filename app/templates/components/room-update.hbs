@@ -4,17 +4,17 @@
 
     <div class="form-group">
       <label for="typeUpdate">room type</label>
-      {{input value=typeUpdate placeholder=room.type}}
+      {{input value=typeUpdate placeholder=room.type required="required"}}
     </div>
 
     <div class="form-group">
     <label for="cityUpdate">city</label>
-    {{input value=cityUpdate placeholder=room.city}}
+    {{input value=cityUpdate placeholder=room.city required="required"}}
   </div>
 
   <div class="form-group">
     <label for="addressUpdate">address</label>
-    {{input value=addressUpdate placeholder=room.address}}
+    {{input value=addressUpdate placeholder=room.address required="required"}}
   </div>
 
   <div class="form-group">
@@ -22,9 +22,9 @@
     {{input value=imageUpdate type="url" placeholder=room.image}}
   </div>
 
-  <button {{action 'updateRoom' room}}>save</button>
+  <button class="btn btn-primary"{{action 'updateRoom' room}}>save</button>
   </form>
 </div>
 {{else}}
-<button class="btn btn-primary" {{action 'updateRoomForm'}}>update</button>
+<button class="btn btn-info" {{action 'updateRoomForm'}}>update</button>
 {{/if}}

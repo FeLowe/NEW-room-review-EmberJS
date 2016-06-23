@@ -15,8 +15,17 @@
           <label for="descriptionUpdate">review</label>
           {{textarea value=descriptionUpdate placeholder=review.description}}
         </div>
-
-        <button class="btn btn-info" {{action 'updateReview' review}}>update</button>
+        <div class="form-group">
+        {{#x-select value=rating action='selectRating'}}
+          {{#x-option value=""}}select rating{{/x-option}}
+          {{#x-option value=one}}1{{/x-option}}
+          {{#x-option value=two}}2{{/x-option}}
+          {{#x-option value=tree}}3{{/x-option}}
+          {{#x-option value=four}}4{{/x-option}}
+          {{#x-option value=five}}5{{/x-option}}
+        {{/x-select}}
+        </div>
+        <button class="btn btn-info" {{action 'updateReview' review}} >update</button>
       </form>
     </div>
 {{else}}

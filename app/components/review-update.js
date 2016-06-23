@@ -11,6 +11,7 @@ export default Ember.Component.extend({
         user: this.get('userUpdate'),
         date: this.get('dateUpdate'),
         description: this.get('descriptionUpdate'),
+        rating: parseInt(this.get('rating'))
       };
       this.set('updateReviewForm', false);
       this.sendAction('updateReviewCp', reviewClickedOn, updateReviewInput);

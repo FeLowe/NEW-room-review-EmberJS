@@ -17,13 +17,13 @@
           {{textarea value=description id="description"}}
         </div>
         <div class="form-group">
-        {{#x-select action='selectRating' value=rating}}
+        {{#x-select value=rating action='selectRating'}}
           {{#x-option value=""}}select rating{{/x-option}}
-          {{#x-option value=1}}1{{/x-option}}
-          {{#x-option value=2}}2{{/x-option}}
-          {{#x-option value=3}}3{{/x-option}}
-          {{#x-option value=4}}4{{/x-option}}
-          {{#x-option value=5}}5{{/x-option}}
+          {{#x-option value=one}}1{{/x-option}}
+          {{#x-option value=two}}2{{/x-option}}
+          {{#x-option value=tree}}3{{/x-option}}
+          {{#x-option value=four}}4{{/x-option}}
+          {{#x-option value=five}}5{{/x-option}}
         {{/x-select}}
         </div>
         <!-- <div class="form-group">

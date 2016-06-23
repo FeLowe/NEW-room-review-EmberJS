@@ -15,7 +15,7 @@
 
         <div class="form-group">
           <label for="address">address</label>
-          {{input value=address id="address" type="address" placeholder="address"}}
+          {{input value=address id="address" placeholder="address"}}
         </div>
 
         <div class="form-group">
@@ -23,7 +23,7 @@
           {{input value=image id="image" type="url" placeholder="picture"}}
         </div>
 
-        <button {{action 'saveRoom'}}>save</button>
+        <button class="btn btn-primary" {{action 'saveRoom'}}>save</button>
       </form>
     </div>
     {{else}}
