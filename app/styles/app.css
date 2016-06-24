@@ -1,15 +1,6 @@
-/*#front-page{*/
-  /*background-image: url('img/trail2.jpg');*/
-  /*width: auto;
-  height: 50px;
-  display: inline-block;
-}*/
-/*.intro{
-  margin-top: 100px;
-  margin-left: 10px;
-  margin-right: 10px;
-}*/
-
+.btn-info{
+  margin-top: 5px;
+}
 #room-page{
   width: auto;
   margin-top: 10%;

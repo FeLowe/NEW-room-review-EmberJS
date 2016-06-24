@@ -3,11 +3,13 @@
 <p>It will sure help many user have a better idea of the room they may be interested in much easier.</p>
 
 <p>If the room you would like to write a review for review has to yet been reviewed, you can start by clicking on the "add room" button, as weel as "saving" it when you fill out the form.</p>
+<hr>
 
-<h4>Write your review for: <i>{{model.address}}</i></h4>
+<h4>Write your review</h4>
 
 {{review-new room=model saveReviewInsideRoomCp="saveReviewInsideRoomRoute"}}
-
+<hr>
+<h4>All reviews<i>{{model.address}}</i>'s address.</h4><br>
 
   {{#each model.reviews as |review|}}
   {{review-detail review=review destroyReviewCp="destroyReviewInsideRoomRoute"}}

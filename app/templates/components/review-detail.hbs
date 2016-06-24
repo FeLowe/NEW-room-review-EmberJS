@@ -1,5 +1,6 @@
 <p><strong>reviewed by:</strong> {{review.user}} ~ <strong>reviewed on:</strong> {{review.date}}</p>
 <p><strong>review:</strong> {{review.description}}</p>
-<p><strong>rating:</strong> {{review.rating}} {{rating-helper review}}</p>
+<p><strong>rating:</strong>{{rating-helper review}}</p>
+<!-- {{review.rating}} -->
 
 <button class="btn btn-danger" {{action 'deleteReview' review}}>delete</button>
