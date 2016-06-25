@@ -24,6 +24,10 @@ export default Ember.Route.extend({
       reviewClickedOn.save();
       this.transitionTo('room');
     },
+    destroyReviewRoute(reviewClickedOn) {
+      reviewClickedOn.destroyRecord();
+      this.transitionTo('room');
+    },
 
     destroyReviewInsideRoomRoute(room){
       var review_deletions = room.get('reviews').map(function(review){

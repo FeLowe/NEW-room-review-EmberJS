@@ -12,7 +12,7 @@
 <h4>All reviews<i>{{model.address}}</i>'s address.</h4><br>
 
   {{#each model.reviews as |review|}}
-  {{review-detail review=review destroyReviewCp="destroyReviewInsideRoomRoute"}}
+  {{review-detail review=review destroyReviewCp="destroyReviewRoute"}}
   {{review-update review=review updateReviewCp="updateReviewInsideRoomRoute"}}
   {{/each}}
 
