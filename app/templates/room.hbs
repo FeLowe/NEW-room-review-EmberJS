@@ -14,6 +14,7 @@
   {{#each model.reviews as |review|}}
   {{review-detail review=review destroyReviewCp="destroyReviewRoute"}}
   {{review-update review=review updateReviewCp="updateReviewInsideRoomRoute"}}
+  {{review-tile review=review}}
   {{/each}}
 
 

@@ -1,17 +1,19 @@
-<div id="read-later"class="container">
+<!-- <div id="read-later"class="container">
 
   {{#each model.reviews as |review|}}
   {{review-detail review=review}}
   {{/each}}
   <h1>this is readLater list:</h1>
 
-</div>
+</div> -->
 
 <!-- <div id="read-later"class="container">
-
   {{#each readLater.reviews as |review|}}
-  {{display-read-later}}
+  {{display-read-later review=review}}
   {{/each}}
-  <h1>this is readLater list:</h1>
-
 </div> -->
+
+<div id="read-later"class="container">
+  <h1>Your read later list</h1>
+  <p>{{display-read-later review=review}}</p>
+</div>

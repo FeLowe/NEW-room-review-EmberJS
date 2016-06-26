@@ -4,7 +4,6 @@ export default Ember.Service.extend({
   reviews: [],
 
   add(review) {
-    debugger;
     this.get('reviews').pushObject(review);
   },
   remove(review) {

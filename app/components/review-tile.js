@@ -4,8 +4,8 @@ export default Ember.Component.extend({
   readLater: Ember.inject.service(),
 
   actions: {
-    removeFromReadLater(review) {
-      this.get('readLater').remove(review);
+    addToReadLater(review) {
+      this.get('readLater').add(review);
     }
   }
 });
