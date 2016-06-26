@@ -12,6 +12,7 @@ Router.map(function() {
   this.route('review', {path: '/review/:review_id'});
   // this.route('room');
   this.route('room', {path: '/room/:room_id'});
+  this.route('read');
 });
 
 export default Router;
