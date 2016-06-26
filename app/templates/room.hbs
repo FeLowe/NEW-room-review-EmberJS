@@ -9,13 +9,13 @@
 
 {{review-new room=model saveReviewInsideRoomCp="saveReviewInsideRoomRoute"}}
 <hr>
-<h4>All reviews for: <i> {{model.address}}</i></h4><br>
 
-  {{#each model.reviews as |review|}}
-  {{review-detail review=review destroyReviewCp="destroyReviewRoute"}}
-  {{review-update review=review updateReviewCp="updateReviewInsideRoomRoute"}}
-  {{review-tile review=review}}
-  {{/each}}
+{{review-detail review=review destroyReviewCp="destroyReviewRoute"}}
+
+{{#each model.reviews as |review|}}
+{{review-update review=review updateReviewCp="updateReviewInsideRoomRoute"}}
+{{review-tile review=review}}
+{{/each}}
 
 
 </div>
