@@ -23,11 +23,11 @@
           {{input value=image id="image" type="url" placeholder="picture"}}
         </div>
 
-        <button class="btn btn-primary" {{action 'saveRoom'}}>save</button>
+        <button class="btn btn-success" {{action 'saveRoom'}}><span class="glyphicon glyphicon-ok-sign"></span> save</button>
       </form>
     </div>
     {{else}}
-    <button class="btn btn-success"{{action 'showRoomForm'}}>add a room</button>
+    <button class="btn btn-success"{{action 'showRoomForm'}}><span class="glyphicon glyphicon-plus-sign"></span> room</button>
     {{/if}}
   <!-- </div> -->
 </div>

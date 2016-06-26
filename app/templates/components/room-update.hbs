@@ -22,9 +22,9 @@
     {{input value=imageUpdate type="url" placeholder=room.image}}
   </div>
 
-  <button class="btn btn-primary"{{action 'updateRoom' room}}>save</button>
+  <button class="btn btn-success"{{action 'updateRoom' room}}><span class="glyphicon glyphicon-ok-sign"></span> save</button>
   </form>
 </div>
 {{else}}
-<button class="btn btn-info" {{action 'updateRoomForm'}}>update</button>
+<button class="btn btn-info" {{action 'updateRoomForm'}}><span class="glyphicon glyphicon-edit"></span> edit</button>
 {{/if}}

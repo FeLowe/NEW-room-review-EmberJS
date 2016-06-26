@@ -4,5 +4,5 @@
 <p><strong>reviewed by:</strong> {{review.user}} ~ <strong>reviewed on:</strong> {{review.date}}</p>
 <p><strong>rating:</strong> {{rating-helper review}}</p>
 
-<button class="btn btn-danger"{{action 'removeFromReadLater' review}}>delete</button>
+<button class="btn btn-danger"{{action 'removeFromReadLater' review}}><span class="glyphicon glyphicon-trash"></span> del</button>
 {{/each}}

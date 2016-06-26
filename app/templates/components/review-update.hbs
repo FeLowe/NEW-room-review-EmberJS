@@ -25,9 +25,9 @@
           {{#x-option value=5}}5{{/x-option}}
         {{/x-select}}
         </div>
-        <button class="btn btn-info" {{action 'updateReview' review}} >update</button>
+        <button class="btn btn-success" {{action 'updateReview' review}}><span class="glyphicon glyphicon-ok-sign"></span> save</button>
       </form>
     </div>
 {{else}}
-  <button class="btn btn-info" {{action 'updateReviewForm'}}>update</button>
+  <button class="btn btn-info" {{action 'updateReviewForm'}}><span class="glyphicon glyphicon-edit"></span> edit</button>
 {{/if}}
