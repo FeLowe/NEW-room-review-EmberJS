@@ -16,8 +16,7 @@
 <div id="rooms-list" class="container">
   <h1>Latest rooms added</h1>
   {{#each model.rooms as |room|}}<br>
-  {{room-popularity room}}
-  {{#link-to 'room' room.id}}{{room.address}}{{/link-to}}
+  <h4> {{room-popularity room}} {{#link-to 'room' room.id}}{{room.address}}{{/link-to}}</h4>
   {{room-update room=room updateRoomCp="updateRoomInIndexRoute"}}
   {{/each}}
 </div>

@@ -1,6 +1,24 @@
 .btn-info{
   margin-top: 5px;
 }
+.btn-primary{
+  margin-top: 5px;
+}
+.form-control{
+  width: 50%;
+  display: inline;
+  height: 33px;
+}
+.glyphicon-fire-red{
+color: red;
+}
+
+a:link, a:visited {
+    color: blue;
+}
+a:hover {
+    color: green;
+}
 #room-page{
   width: auto;
   margin-top: 10%;
@@ -31,13 +49,13 @@ height: 1200px;
   margin-left: 10px;
   margin-right: 10px;
 }
-.contact{
+/*.contact{
   width: auto;
   height: 1120px;
   margin-top: 100px;
   margin-left: 10px;
-  margin-right: 10px;
-}
+  margin-right: 10px;*/
+/*}*/
 #contact-form{
   margin-left: 30px;
 }

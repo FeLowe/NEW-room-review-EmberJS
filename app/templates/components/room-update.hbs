@@ -3,23 +3,23 @@
   <form>
 
     <div class="form-group">
-      <label for="typeUpdate">room type</label>
-      {{input value=typeUpdate placeholder=room.type required="required"}}
+      <label for="typeUpdate">room type</label><br>
+      {{input value=typeUpdate placeholder=room.type class="form-control"}}
     </div>
 
     <div class="form-group">
-    <label for="cityUpdate">city</label>
-    {{input value=cityUpdate placeholder=room.city required="required"}}
+    <label for="cityUpdate">city</label><br>
+    {{input value=cityUpdate placeholder=room.city class="form-control"}}
   </div>
 
   <div class="form-group">
-    <label for="addressUpdate">address</label>
-    {{input value=addressUpdate placeholder=room.address required="required"}}
+    <label for="addressUpdate">address</label><br>
+    {{input value=addressUpdate placeholder=room.address class="form-control"}}
   </div>
 
   <div class="form-group">
-    <label for="imageUpdate">image</label>
-    {{input value=imageUpdate type="url" placeholder=room.image}}
+    <label for="imageUpdate">image</label><br>
+    {{input value=imageUpdate type="url" placeholder=room.image class="form-control"}}
   </div>
 
   <button class="btn btn-success"{{action 'updateRoom' room}}><span class="glyphicon glyphicon-ok-sign"></span> save</button>
