@@ -6,4 +6,6 @@
 <p><strong>rating:</strong> {{rating-helper review}}</p>
 
 <button class="btn btn-danger"{{action 'deleteReview' review}}><span class="glyphicon glyphicon-trash"></span> del</button>
+{{review-update review=review updateReviewCp="updateReviewInsideRoomRoute"}}
+{{review-tile review=review}}
 {{/each}}

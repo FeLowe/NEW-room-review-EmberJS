@@ -2,9 +2,8 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
 
-  fullAddress: Ember.computed('room.address', 'room.city', function() {
+  fullAddress: Ember.computed('room.[]', function() {
       return this.get('room.address') + ', ' + this.get('room.city');
-      debugger;
     }),
 
   sortBy: ['ranting:asc'],

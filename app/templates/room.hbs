@@ -10,12 +10,12 @@
 {{review-new room=model saveReviewInsideRoomCp="saveReviewInsideRoomRoute"}}
 <hr>
 
-{{review-detail review=review destroyReviewCp="destroyReviewRoute"}}
 
-{{#each model.reviews as |review|}}
+{{review-detail room=model destroyReviewCp="destroyReviewRoute"}}
+<!-- {{#each model.reviews as |review|}}
 {{review-update review=review updateReviewCp="updateReviewInsideRoomRoute"}}
 {{review-tile review=review}}
-{{/each}}
+{{/each}} -->
 
 
 </div>
