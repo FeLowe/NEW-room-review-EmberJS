@@ -1,11 +1,12 @@
-<h2>All reviews for {{fullAddress}}</h2>
+<h2>All reviews for {{fullAddress}}</h2><br>
 
 {{#each sortedReviews as |review|}}
+<p><strong>rating:</strong> {{rating-helper review}}</p>
 <p><strong>review:</strong> {{review.description}}</p>
 <p><strong>reviewed by:</strong> {{review.user}} ~ <strong>reviewed on:</strong> {{review.date}}</p>
-<p><strong>rating:</strong> {{rating-helper review}}</p>
 
 <button class="btn btn-danger"{{action 'deleteReview' review}}><span class="glyphicon glyphicon-trash"></span> del</button>
-{{review-update review=review updateReviewCp="updateReviewInsideRoomRoute"}}
+{{review-update room=room  review=review update="update"}}
 {{review-tile review=review}}
+<hr>
 {{/each}}

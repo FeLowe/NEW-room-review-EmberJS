@@ -13,13 +13,12 @@ export default Ember.Component.extend({
     },
     saveReview() {
       var reviewInput = {
-        user: this.get('user'),
         date: this.get('date'),
         description: this.get('description'),
+        rating: parseInt(this.get('rating')),
         room: this.get('room'),
-        rating: parseInt(this.get('rating'))
+        user: this.get('user')
       };
-      // debugger;
       this.set('addNewReview', false);
       this.sendAction('saveReviewInsideRoomCp', reviewInput);
     }

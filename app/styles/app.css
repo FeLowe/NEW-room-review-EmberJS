@@ -12,13 +12,6 @@
 .glyphicon-fire-red{
 color: red;
 }
-
-a:link, a:visited {
-    color: blue;
-}
-a:hover {
-    color: green;
-}
 #room-page{
   width: auto;
   margin-top: 10%;
@@ -30,7 +23,7 @@ height: 1200px;
 }
 #review-page{
   width: auto;
-  height: 1120px;
+  height: 1500px;
   margin-top: 100px;
   margin-left: 10px;
   margin-right: 10px;
@@ -49,13 +42,7 @@ height: 1200px;
   margin-left: 10px;
   margin-right: 10px;
 }
-/*.contact{
-  width: auto;
-  height: 1120px;
-  margin-top: 100px;
-  margin-left: 10px;
-  margin-right: 10px;*/
-/*}*/
+
 #contact-form{
   margin-left: 30px;
 }
@@ -77,10 +64,8 @@ height: 1200px;
 
 /*FOOTER EVERYTHING*/
 footer {
-  /*height: 70px;*/
   padding: 15px 15px;
   font-size: 15px;
-  /*line-height: 20px;*/
   color: black;
 }
 
@@ -118,5 +103,4 @@ footer {
   font-size:15px;
   color:#9d9d9d;
   margin-top: 5px;
-
 }

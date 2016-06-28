@@ -14,6 +14,9 @@ export default Ember.Component.extend({
       if (confirm('Are you sure you want to delete this review?')) {
         this.sendAction('destroyReviewCp', currentReview);
         }
-      }
+      },
+      update(reviewClickedOn, updateReviewInput) {
+        this.sendAction('update', reviewClickedOn, updateReviewInput);
+      },
     }
 });

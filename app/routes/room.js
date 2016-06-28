@@ -15,7 +15,7 @@ export default Ember.Route.extend({
       this.transitionTo('room', reviewInput.room);
     },
 
-    updateReviewInsideRoomRoute(reviewClickedOn, updateReviewInput) {
+    update(reviewClickedOn, updateReviewInput) {
       Object.keys(updateReviewInput).forEach(function(key) {
         if(updateReviewInput[key]!==undefined) {
           reviewClickedOn.set(key, updateReviewInput[key]);
@@ -24,6 +24,7 @@ export default Ember.Route.extend({
       reviewClickedOn.save();
       this.transitionTo('room');
     },
+
     destroyReviewRoute(reviewClickedOn) {
       reviewClickedOn.destroyRecord();
       this.transitionTo('room');
@@ -36,7 +37,6 @@ export default Ember.Route.extend({
       Ember.RSVP.all(review_deletions).then(function(){
         return room.destroyRecord();
       });
-      debugger;
       this.transitionTo('room');
     }
   }

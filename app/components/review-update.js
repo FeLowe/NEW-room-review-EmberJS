@@ -8,13 +8,19 @@ export default Ember.Component.extend({
     },
     updateReview(reviewClickedOn) {
       var updateReviewInput = {
-        user: this.get('userUpdate'),
         date: this.get('dateUpdate'),
         description: this.get('descriptionUpdate'),
-        rating: parseInt(this.get('rating'))
+        rating: parseInt(this.get('rating')),
+        room: this.get('room'),
+        user: this.get('userUpdate')
       };
       this.set('updateReviewForm', false);
-      this.sendAction('updateReviewCp', reviewClickedOn, updateReviewInput);
-    }
+      this.sendAction('update', reviewClickedOn, updateReviewInput);
+    },
+    selectRating(selection){
+      if (selection) {
+        this.set('rating', selection);
+      }
+    },
   }
 });
