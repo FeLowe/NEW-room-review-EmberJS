@@ -1,4 +1,16 @@
-# Room-review
+# Week 4: Javascript - Ember Extended Independent Project
+
+### Project: Room Reviewer, 06/17/2016.
+
+#### By Fernanda Lowe
+
+
+## Project Description
+
+This application let users write reviews on rooms they are or have rented, or just read one, as well as add, update, delete a review.
+
+
+## Ember Description
 
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
